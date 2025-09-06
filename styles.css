@@ -1,0 +1,26 @@
+.bg-offwhite {background-color: #F8F9FA !important;}
+.text-charcoal {color: #212529 !important;}
+
+.navbar .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  height: 60px;
+  max-width: 100%;
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
