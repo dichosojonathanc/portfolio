@@ -1,5 +1,20 @@
-.bg-offwhite {background-color: #F8F9FA !important;}
-.text-charcoal {color: #212529 !important;}
+.bg-offwhite {
+  background-color: #F8F9FA !important;
+}
+
+.text-charcoal {
+  color: #212529 !important;
+}
+
+.bg-grayish {
+  background-color: #6C757D !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
 .navbar .nav-link {
   font-family: 'Poppins', sans-serif;
@@ -20,7 +35,28 @@
   margin-right: 1rem;
 }
 
+img.myphoto {
+  border-radius: 50%;
+  max-width: 250px;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-body {
-  font-family: 'Roboto', sans-serif;
+img.myphoto:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+p.tagline {
+  font-style: italic;
+}
+
+p.name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+a:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
