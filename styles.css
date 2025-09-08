@@ -51,12 +51,89 @@ p.tagline {
   font-style: italic;
 }
 
-p.name {
+h3,
+h5 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
-a:hover{
+a:hover {
   transform: scale(1.05);
   transition: 0.3s ease;
 }
+
+.timeline {
+  position: relative;
+  max-width: 500px;   /* narrower */
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #212529;
+  transform: translateX(-50%);
+}
+
+.event {
+  position: relative;
+  width: 40%;         /* slimmer event blocks */
+  margin: 8px 0;      /* tighter spacing */
+  font-size: 0.8rem;  /* smaller text */
+  line-height: 1.2;
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  top: 5px;           /* dot closer */
+  width: 8px;         /* smaller dot */
+  height: 8px;
+  background: #212529;
+  border-radius: 50%;
+  border: 1px solid #F8F9FA;
+}
+
+.left {
+  left: 0;
+  text-align: right;
+}
+
+.left::before {
+  right: -20px;
+}
+
+.right {
+  left: 60%;          /* push right items */
+  text-align: left;
+}
+
+.right::before {
+  left: -20px;
+}
+
+/* Mobile: stack cleanly */
+@media (max-width: 768px) {
+  .event {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    margin-left: 25px;
+  }
+
+  .event::before {
+    left: -15px !important;
+    right: auto;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+}
+
+

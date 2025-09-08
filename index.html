@@ -19,7 +19,7 @@
   <title>Portfolio</title>
 </head>
 
-<body class="bg-offwhite" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+<body class="bg-offwhite">
   <nav class="navbar navbar-expand-lg navbar-light bg-offwhite fixed-top">
     <div class="container-fluid">
       <a href="" class="navbar-brand fw-bold"> JNTHN </a>
@@ -32,13 +32,13 @@
             <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">About Me</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact Me</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -48,23 +48,23 @@
   <section id="home" class="d-flex align-items-center min-vh-100">
     <div class="container">
       <div class="row align-items-center text-center">
-        <div class="col-12 col-md-6 d-flex justify-content-center p-3" data-aos="fade-up">
-          <img class="myphoto" src="images/myphoto.jpg" alt="My Photo">
+        <div class="col-12 col-md-6 d-flex justify-content-center p-3">
+          <img class="myphoto" src="images/myphoto.jpg" alt="My Photo" data-aos="fade-up">
         </div>
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-3" data-aos="fade-up">
-          <p class="name text-charcoal">I am Jonathan C. Dichoso</p>
-          <p class="tagline text-charcoal">"Building my future, one line at a time."</p>
-          <p class="text-charcoal">Bachelor of Science in Information Technology graduate eager to grow as an IT
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center p-3">
+          <h3 class="name text-charcoal" data-aos="fade-up" data-aos-delay="100">I am Jonathan C. Dichoso</h3>
+          <p class="tagline text-charcoal" data-aos="fade-up" data-aos-delay="200">"Building my future, one line at a time."</p>
+          <p class="text-charcoal" data-aos="fade-up" data-aos-delay="300">Bachelor of Science in Information Technology graduate eager to grow as an IT
             professional.</p>
-          <div>
+          <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="300">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dichoso.jonathanc@gmail.com" target="_blank"
-              class="btn bg-grayish rounded-circle mx-2">
+              class="btn bg-grayish rounded-circle">
               <img src="images/gmail-logo.png" alt="Gmail Logo">
             </a>
-            <a href="https://www.facebook.com/jonathan.dichoso.09/" class="btn bg-grayish rounded-circle mx-2">
+            <a href="https://www.facebook.com/jonathan.dichoso.09/" class="btn bg-grayish rounded-circle">
               <img src="images/fb-logo.png" alt="Facebook Logo">
             </a>
-            <a href="https://github.com/dichosojonathanc/" class="btn bg-grayish rounded-circle mx-2">
+            <a href="https://github.com/dichosojonathanc/" class="btn bg-grayish rounded-circle">
               <img src="images/github-logo.png" alt="Github Logo">
             </a>
           </div>
@@ -73,19 +73,31 @@
     </div>
   </section>
 
-  <!-- <section id="about" class="p-5 bg-light" style="min-height:100vh;">
+  <section id="about" class="d-flex align-items-center min-vh-100">
     <div class="container">
-      <h2>About Me</h2>
-      <p>Write about yourself here.</p>
+      <h3 class="text-center text-charcoal" data-aos="fade-right" data-aos-once="false">About Me</h3>
+      <p class="text-center text-charcoal" data-aos="fade-right">I am a BS Information Technology graduate from STI College Santa Rosa with a strong interest in web development. I am passionate about creating solutions and continuously working toward becoming a well-rounded IT professional.</p>
+      <div class="timeline">
+        <h5 class="text-center text-charcoal p-2">Education</h5>
+        <div class="event left">
+          <h6>STI College Santa Rosa</h6>
+          <p>Event Description</p>
+        </div>
+        <div class="event right">
+          <h6>Labas Senior High School</h6>
+          <p>Event Description</p>
+        </div>
+        <div class="event left">
+          <h6>Balibago Integrated High School</h6>
+          <p>Event Description</p>
+        </div>
+        <div class="event right">
+          <h6>Santa Rosa Elementary School Central-1</h6>
+          <p>Event Description</p>
+        </div>
+      </div>
     </div>
   </section>
-
-  <section id="projects" class="p-5 bg-white" style="min-height:100vh;">
-    <div class="container">
-      <h2>Projects</h2>
-      <p>Showcase your work here.</p>
-    </div>
-  </section> -->
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
