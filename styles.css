@@ -123,7 +123,7 @@ a:hover {
     width: 100%;
     left: 0 !important;
     text-align: left !important;
-    margin-left: 25px;
+    margin-left: 30px;
   }
 
   .event::before {
@@ -132,7 +132,7 @@ a:hover {
   }
 
   .timeline::before {
-    left: 0;
+    left: 10px;
   }
 }
 
