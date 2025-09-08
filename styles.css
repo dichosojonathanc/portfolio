@@ -64,7 +64,7 @@ a:hover {
 
 .timeline {
   position: relative;
-  max-width: 500px;   /* narrower */
+  max-width: 500px;
   margin: 0 auto;
   padding: 5px 0;
 }
@@ -82,17 +82,17 @@ a:hover {
 
 .event {
   position: relative;
-  width: 40%;         /* slimmer event blocks */
-  margin: 8px 0;      /* tighter spacing */
-  font-size: 0.8rem;  /* smaller text */
+  width: 40%;
+  margin: 8px 0;
+  font-size: 0.8rem;
   line-height: 1.2;
 }
 
 .event::before {
   content: '';
   position: absolute;
-  top: 5px;           /* dot closer */
-  width: 8px;         /* smaller dot */
+  top: 5px;
+  width: 8px;
   height: 8px;
   background: #212529;
   border-radius: 50%;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .right {
-  left: 60%;          /* push right items */
+  left: 60%;
   text-align: left;
 }
 
@@ -117,13 +117,22 @@ a:hover {
   left: -20px;
 }
 
-/* Mobile: stack cleanly */
+/*Mobile*/
 @media (max-width: 768px) {
+  .timeline {
+    max-width: 100%;
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
   .event {
     width: 100%;
     left: 0 !important;
     text-align: left !important;
-    margin-left: 30px;
+    margin: 15px 0 15px 0;
   }
 
   .event::before {
@@ -131,9 +140,12 @@ a:hover {
     right: auto;
   }
 
-  .timeline::before {
-    left: 10px;
+  .left,
+  .right {
+    left: 0 !important;
+    text-align: left !important;
   }
 }
+
 
 
