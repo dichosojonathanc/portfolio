@@ -46,6 +46,13 @@ img.myphoto {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+img.projectImage {
+  border-radius: 15px;
+  max-width: 250px;
+  height: 130px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 p.tagline {
   font-style: italic;
 }
